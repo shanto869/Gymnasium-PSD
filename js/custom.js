@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	'use strict'
 
 	// banner slider
 	$('.banner-slider').slick({
@@ -9,5 +10,13 @@ $(document).ready(function(){
 	});
 
 	// about video pop-up
-	$('.venobox').venobox();
+	$('.venobox').venobox({
+		
+	});
+
 });
+
+
+
+
+

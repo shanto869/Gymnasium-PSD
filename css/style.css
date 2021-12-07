@@ -2,6 +2,7 @@
     --mainfont: 'Oswald', sans-serif;
     --subfont: 'Open Sans', sans-serif;
     --brand: #e23e38;
+    --twitc: #1da0f2;
     --headcolor: #353535;
     --paracolor: #777777;
     --overlay50: rgba(226, 62, 56, 0.5);
@@ -424,6 +425,7 @@ header img {
     z-index: 1;
     padding-top: 30px;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #gallery .gallery-bg::after {
@@ -459,8 +461,90 @@ header img {
     font-size: 30px;
 }
 
-
-
 /* --------------------
     gallery css ends 
+---------------------  */
+#team .container {
+    margin-top: 60px;
+}
+
+#team .container .team-member {
+    transition: all linear .4s;
+}
+
+#team .container .team-member:hover {
+    transform: translateY(-40px);
+}
+
+#team .container .team-member .card {
+    border-color: transparent !important;
+    transition: all linear .3s;
+}
+
+#team .container .team-member:hover .card {
+    border-color: #ddd !important;
+}
+
+#team .container .team-member .team-img .team-overlay {
+    background: var(--overlay50);
+    border: 5px solid #ddd;
+    transform: scale(.90);
+    width: 0%;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+
+#team .container .team-member .team-img .team-overlay i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    transition: all linear .3s;
+    font-size: 16px;
+}
+
+#team .container .team-member .team-img .team-overlay a {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#team .container .team-member .team-img .team-overlay a:last-of-type {
+    margin-bottom: 0;
+}
+
+#team .container .team-member .team-img .team-overlay i:hover {
+    color: var(--twitc);
+}
+
+#team .container .team-member:hover .team-img .team-overlay {
+    width: 100%;
+    visibility: visible;
+   
+}
+
+#team .container .team-member .card .card-body h5 {
+    color: var(--headcolor);
+    margin-top: -8px;
+}
+
+#team .container .team-member .card .card-body h6 {
+    color: var(--headcolor);
+    margin-top: 2px;
+    padding-bottom: 10px;
+}
+
+#team .container .team-member .card .card-body p {
+    color: var(--paracolor);
+    line-height: 18px;
+    padding: 0 7px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+#team .container .team-member:hover .card .card-body p {
+    opacity: 1;
+}
+
+/* --------------------
+    team css ends 
 ---------------------  */
