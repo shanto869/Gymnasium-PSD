@@ -114,7 +114,17 @@ img {
 /* --------------------
     font css ends 
 ---------------------  */
+header h4 {
+    color: var(--headcolor);
+}
 
+header img {
+    margin-top: -10px;
+}
+
+/* --------------------
+    header css ends 
+---------------------  */
 .navbar {
     background: rgba(53, 53, 53, 0.25);
     position: fixed;
@@ -127,6 +137,7 @@ img {
     background-color: rgba(255, 255, 255, 0.20);
     padding: 10px 30px !important;
     transform: skewX(-38deg);
+    z-index: -1;
 }
 
 .navbar .navbar-brand img {
@@ -182,7 +193,6 @@ img {
 .navbar-expand-lg .navbar-nav .nav-link.active::after {
     width: 100%;
 }
-
 
 /* --------------------
     navbar css ends 
@@ -268,6 +278,7 @@ img {
 #banner .bg-1 .banner-text p {
     position: relative;
     padding: 0 22px;
+    line-height: 18px;
 }
 
 #banner .bg-1 .banner-text p::before {
@@ -377,4 +388,79 @@ img {
 
 /* --------------------
     banner css ends 
+---------------------  */
+#about {
+    margin: 80px 0;
+}
+
+#about .container .about-video .overlay {
+    background: var(--overlay60);
+}
+
+#about .container .about-video .overlay i {
+    width: 48px;
+    height: 48px;
+    background: var(--brand);
+    text-align: center;
+    color: var(--headcolor);
+    border-radius: 50%;
+    line-height: 48px;
+    font-size: 25px;
+}
+
+#about .container .about-text p {
+    line-height: 24px;
+    color: var(--paracolor);
+    padding: 0 13px;
+    padding-top: 14px;
+}
+
+/* --------------------
+    about css ends 
+---------------------  */
+#gallery .gallery-bg {
+    background: url('../images/gallery-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+#gallery .gallery-bg::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--overlay80);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#gallery .gallery-bg .container .gallery-item {
+    margin-bottom: 30px;t
+}
+
+#gallery .gallery-bg .container .gallery-item .item-overlay {
+    background: var(--overlay50);
+    border: 5px solid #9da1a2;
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+#gallery .gallery-bg .container .gallery-item:hover .item-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#gallery .gallery-bg .container .gallery-item .item-overlay i {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+/* --------------------
+    gallery css ends 
 ---------------------  */
