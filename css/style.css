@@ -548,3 +548,116 @@ header img {
 /* --------------------
     team css ends 
 ---------------------  */
+#testimonial .testimonial-bg {
+    background: url('../images/testimonial-bg.jpg') no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+#testimonial .testimonial-bg::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--overlay80);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#testimonial .testimonial-bg .person-details h5 {
+    padding-bottom: 5px;
+
+}
+
+#testimonial .testimonial-bg .person-details h6 {
+    padding-bottom: 5px;
+
+}
+
+#testimonial .testimonial-bg .ratings i {
+    color: var(--brand);
+    font-size: 14px;
+    z-index: 2;
+}
+
+#testimonial .testimonial-bg .person-text p {
+    color: #f1f1f1;
+    line-height: 18px;
+    padding-right: 48px;
+    padding-bottom: 83px;
+}
+
+#testimonial .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+#testimonial .slick-dots li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li.slick-active {
+    background: var(--brand);
+    border-color: var(--brand);
+    transform: scale(1.3);
+}
+
+#testimonial .slick-dots li:last-of-type {
+    margin-right: 0;
+}
+
+#testimonial .slick-dots li button {
+    font-size: 0;
+    border: none;
+    outline: 0;
+}
+
+#testimonial .left-arrow {
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    color: var(--brand);
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -51px;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+
+#testimonial .right-arrow {
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    color: var(--brand);
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+
+
+/* --------------------
+    testimonial-bg css ends 
+---------------------  */
+
+
